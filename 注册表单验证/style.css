@@ -1,0 +1,68 @@
+#head{
+}
+#image{
+}
+#buttom{
+	display: inline-block;
+	float: right;
+	line-height: 70px;
+}
+#body{
+	width: 30%;
+	margin-left: 100px;
+}
+#verification{
+	color: #FF8E0B;
+	font-size: 13px;
+	cursor: pointer;
+}
+#s{
+	display: inline-block;
+	background-color: #B6B3B4;
+	width: 26%;
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+}
+#m{
+	display: inline-block;
+	background-color: #B6B3B4;
+	width: 26%;
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+}
+#l{
+	display: inline-block;
+	background-color: #B6B3B4;
+	width: 26%;
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+}
+#check{
+	margin-left: 85px;
+	width: 49%;
+}
+#submit{
+	background-size:;
+	background-color: #F8A500;
+	text-align:center;
+	border: 0px;
+	cursor: pointer;
+	font-weight: 800;
+}
+#submit1{
+	background-color: #F8A500;
+	text-align:center;
+	border: 0px;
+	cursor: pointer;
+	font-weight: 800;
+}
+a{
+	text-decoration: none;
+	color: #FF9E00;
+}
+button{
+	cursor: pointer;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>美团注册</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="head">
+			<img src="images/logo.png">
+			<div id="buttom">已有美团账号？<button>登录</button></div>
+		</div>
+		<hr>
+		<div id="body">
+			<table cellspacing="3px" cellpadding="5px" width="800px">
+				<tr>
+					<td>手机号</td>
+					<td><input type="text" id="fname" onblur="upperCase()" style="width: 80%;"></td>
+					<td hidden id="1">-请输入正确的11位手机号码</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verification">免费获取短信动态码</td>
+				</tr>
+				<tr>
+					<td>短信动态码</td>
+					<td><input type="text" style="width: 80%;" id="duanxing" onblur="onblurfun()"></td>
+					<td hidden id="2">-输入错误，请重新输入</td>
+				</tr>
+				<tr>
+					<td>创建密码</td>
+					<td><input type="password" style="width: 80%;"></td>
+					<td hidden id="3">-密码太短，至少8个字符</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<div>
+							<div id="s">弱</div>
+							<div id="m">中</div>
+							<div id="l">强</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>确认密码</td>
+					<td><input type="password" style="width: 80%;"></td>
+					<td hidden id="4">-两次输入的密码不一致，请重新输入</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="submit"><input type="submit" value="完成注册并登录" id="submit1" style="width: 80%;"></td>
+				</tr>
+			</table>
+			<div id="check">
+				<input type="radio" name="radio">我已阅读并同意<a href="">《美团用户协议》</a><a href="">《隐私政策》</a>，并授权美团使用该美团账号信息（如昵称、头像、收货地址）进行统一管理
+			</div>
+		</div>
+	</body>
+	<script>
+		function upperCase(){
+			var phoneboj=document.getElementById("fname");
+			let tel=document.getElementById("1");
+			var phoneNumber=phoneboj.value;
+			var patt=/^1[3456789][0-9]{9}$/;
+			if(patt.test(phoneNumber)){
+				tel.hidden=true;
+			}else{
+				tel.hidden=false;
+			}
+}
+		function onblurFun(){
+			var mailobj=document.getElementById("duanxing");
+			var mailnumber=mailobj.value;
+			let ma=document.getElementById("2");
+			var patt=/^[0-9]{4}$/;
+			if(patt.test(mailnumber)){
+				ma.hidden=true;
+			}else{
+				ma.hidden=false;
+			}
+		}
+
+	</script>
+</html>
